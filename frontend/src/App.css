@@ -1,0 +1,470 @@
+/* ----- COLOR VARIABLES FROM PALETTE ----- */
+/* :root {
+  --blue-primary: #2f486d;
+  --blue-dark: #223148;
+  --cream-light: #f3eae0;
+  --beige: #d2c7b8;
+
+  --text-dark: #223148;
+  --text-light: #ffffff;
+} */
+
+/* ----- GLOBAL RESET ----- */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+} */
+
+/* ----- PAGE BACKGROUND ----- */
+/* body {
+  background-color: var(--cream-light);
+  color: var(--text-dark);
+} */
+
+/* ----- HEADER ----- */
+/* .header {
+  background-color: var(--blue-primary);
+  padding: 20px;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 26px;
+  font-weight: 600;
+} */
+
+/* ----- NAVBAR ----- */
+/* .navbar {
+  background-color: var(--blue-dark);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; }*/
+
+/* align-items: center; */
+
+/* .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar a {
+  color: var(--cream-light);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.navbar a:hover {
+  color: var(--beige);
+} */
+
+/* ----- CARD STYLE ----- */
+/* .card {
+  background-color: var(--beige);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  margin: 24px;
+} */
+
+/* ----- BUTTONS ----- */
+/* .btn-primary {
+  background-color: var(--blue-dark);
+  border: none;
+  padding: 12px 20px;
+  color: var(--text-light);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--blue-primary);
+} */
+
+/* new css */
+
+
+/* ----- COLOR VARIABLES ----- */
+:root {
+  --blue-primary: #2f486d;
+  --blue-dark: #223148;
+  --cream-light: #f3eae0;
+  --beige: #d2c7b8;
+
+  --text-dark: #223148;
+  --text-light: #ffffff;
+
+  --accent: #4f7cff;
+}
+
+/* ----- GLOBAL RESET ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ----- BODY ----- */
+body {
+  background: linear-gradient(135deg, #f3eae0, #e6dccb);
+  color: var(--text-dark);
+}
+
+/* ----- NAVBAR (MODERN GLASS STYLE) ----- */
+.navbar {
+  background: rgba(34, 49, 72, 0.9);
+  background-color: #223148;
+  backdrop-filter: blur(10px);
+  padding: 14px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: var(--cream-light);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  font-weight: bold;
+}
+
+/* underline animation */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: var(--accent);
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* ----- CARD ----- */
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  margin: 30px auto;
+  max-width: 700px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ----- POSTS GRID p----- */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 50px;
+  /* font-size: 18px; */
+  /* color: gray; */
+}
+
+/* ----- POST CARD ----- */
+.post-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.post-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  /* background-color: var(--accent); */
+  /* color: white; */
+}
+
+/* image */
+.post-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* content */
+.post-body {
+  padding: 15px;
+}
+
+.post-body h3 {
+  margin-bottom: 8px;
+}
+
+.genre {
+  /* color: var(--accent); */
+  font-size: 12px;
+}
+
+/* meta */
+.meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 12px;
+  color: gray;
+  /* color: black */
+}
+
+/* ----- BUTTON : [Login Register common code]----- */
+.btn {
+  background: var(--blue-dark);
+  color: beige;
+  padding: 10px 10px;
+  width: 50%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: large;
+  position: relative;
+  overflow: hidden;
+  /* gap: 10px; */
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255,255,255,0.2);
+  transition: 0.3s;
+}
+
+
+.btn:hover {
+  background: var(--accent);
+  /* text-decoration:underline; */
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+/* delete button */
+.btn.danger {
+  background: darkblue;
+  border: none;
+  font-weight: bold;
+  width: 35%;
+  text-align: center;
+  margin-top: 10px;
+  /* style={{border:"none", fontWeight:"bold", width:"30%"}} */
+}
+
+.btn.danger:hover {
+  background: #e11c0b;
+  color: white;
+}
+
+/* AUTH-CARD Register + Login */
+.auth-card-reg{
+width: 60vw;
+margin-top: 2%;
+margin-left: 20%;
+/* text-align: center; */
+}
+
+.auth-card-login{
+/* width: 30%; */
+margin-top: 2%;
+margin-left: 20%;
+/* text-align: center; */
+}
+
+.auth-card-login input{
+  margin-top: 12px;
+  width: 77%;
+}
+
+/* REGISTER */
+.register-btn{
+  width: 50%;
+padding: 8px 8px;
+font-weight: none;
+text-align: center;
+border-radius: 20px;
+/* margin-top: 10px; */
+}
+
+/* LOGIN */
+.login-btn{
+  width: 25%;
+padding: 8px;
+/* font-weight: none; */
+margin-top: 3%;
+}
+
+/* ----- FORM INPUTS ----- */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+  background: #fff;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(79, 124, 255, 0.4);
+}
+
+/* ----- SEARCH BOX ----- */
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+/* ----- ANIMATION (fade in) ----- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-card {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.logo {
+  color: white;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-right .btn.small {
+  padding: 6px 12px;
+  width: auto;
+  font-size: 15px;
+}
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.username {
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 15px;
+}
+
+/* search container */
+.search-container {
+  display: flex;
+  align-items: center;
+  /* background: white; */
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  /* justify-content: space-between; */
+  gap: 5px;
+}
+
+/* input */
+.search-container input {
+  /* padding: 8px 12px; */
+  border-radius: 18px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 36vw;
+  font-weight: bold;
+}
+
+/* button */
+.search-container button {
+  padding: 8px 8px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--blue-dark);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 30%;
+  font-weight: bold;
+  margin-top: 13px;
+}
+
+.search-container button:hover {
+  background-color: var(--accent);
+}
+
+.post-card {
+  transition: all 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.feed, .card {
+  animation: fadeIn 0.4s ease-in-out;
+}
+.active-link {
+  border-bottom: 2px solid var(--accent);
+}
