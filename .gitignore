@@ -3,3 +3,4 @@ node_modules
 dist
 build
 uploads
+git remote add origin https://github.com/nafiyamasroor9/bookreview.git
