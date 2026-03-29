@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-baseURL: import.meta.env.VITE_API_BASE || 'https://bookreview-2-oiw8.onrender.com',
+baseURL: import.meta.env.VITE_API_BASE || 'http://localhost:5000/api',
 });
 
 API.interceptors.request.use(config => {
