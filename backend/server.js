@@ -1,4 +1,5 @@
     // backend/server.js
+    require('dns').setDefaultResultOrder('ipv4first');
     require('dotenv').config();
     const express = require('express');
     const mongoose = require('mongoose');
@@ -27,9 +28,10 @@
         });
     })
     .catch(err => {
+        console.log("MONGO URI:", process.env.MONGO_URI);
         console.error("Mongo error:", err);
     });
-    
+
     // old code
 // mongoose.connect(process.env.MONGO_URI,{ 
     //     useNewUrlParser: true,
